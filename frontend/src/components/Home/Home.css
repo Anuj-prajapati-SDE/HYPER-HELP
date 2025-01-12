@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.home-main { 
+    width: 100%;  
+    height: 100vh;
+    top: 6rem;
+    padding: 0 45px;
+    overflow: hidden;
+}  
+.home-image { 
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.home-image .home-image-1 {
+    position: absolute;
+    top: 9%;
+   right: 2%;
+    opacity: 1;
+    scale: 0.9;
+    z-index: 1;
+}
+ 
+.home-image .home-image-1 img {
+    width: 800px; 
+}
+
+.home-image .home-image-2 {
+    position: absolute;
+    bottom: 24%;
+   right:7%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.home-image .home-image-2 img {
+    width: 500px;
+}
+
+.Background-Blur {
+    opacity: 1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: calc(100% - 8%);
+    height: calc(100vh - 7rem);
+    position: absolute;
+    z-index: 2;
+    top: 6rem; 
+    gap: 20px;
+    background: var(--background-color);
+    border-radius: 16px;
+    box-shadow:  var(--box-shadow);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid var(--background-color);
+}
+ 
+.home-title {
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 40px;
+    transition: 0.3s ease-in-out;
+    top: 0rem;
+    z-index: 4;
+    /* background-color: aqua; */
+    width: 60%;
+    border-radius: 16px;
+    height: calc(100vh - 6rem);
+}
+
+.home-title img {
+ opacity: 1; 
+ scale: 0;  
+ width: 100px;
+}
+
+.home-title h1, .home-title h2, .home-title h3{
+    position: relative;
+    overflow: hidden;
+    width: 85%;
+    text-transform: uppercase;
+    text-align: start;
+    top:100px;
+    font-size: 4rem;
+    /* background-color: #FF5530; */
+     height: 100px;
+     text-shadow: var(--text-shadow);
+    opacity: 1;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.4;
+    text-align: center;
+    display: flex;
+    font-weight: 700;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.home-title span {
+    cursor: pointer;
+    background-color: var(--theme-color);
+  border: 3px solid var(--border-color);
+    color: white;
+    height: 70px;
+    margin-top: 15px;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 22px;
+}
+
+.home-main .scrollDownArrow {
+    position: relative;
+    bottom: 10%;
+    left: 50%;
+    width: 180px;
+     height: 50px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, 0);
+    font-size: larger;
+    border-radius: 30px;
+    z-index: 5;
+    margin-bottom: 8%;
+    border: 1px solid var(--theme-color);
+    transition:  0.2s ease-in-out;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home-main .scrollDownArrow:hover{
+    cursor: pointer;
+    border: 5px solid var(--theme-color);
+}
+.home-main .Background-Blur .ExploreBtn{
+    position: relative;
+    width: 13%;
+    height: 8%;
+    font-size:large;
+    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ outline: none;
+ border: 1px solid var(--theme-color);
+   font-weight: 700;
+   border-radius: 30px;
+   transition: 0.2s ease-in-out;
+  color: black;
+}
+.home-main .Background-Blur .ExploreBtn:hover{
+    cursor: pointer;
+    border: 5px solid var(--theme-color);
+}
+
